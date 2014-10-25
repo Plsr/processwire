@@ -52,8 +52,9 @@ $config->prependTemplateFile = '_init.php';
  *
  * @var string
  *
- */
+ 
 $config->appendTemplateFile = '_main.php';
+*/
 
 
 
@@ -97,4 +98,7 @@ $config->timezone = 'Europe/Berlin';
  * 
  */
 $config->httpHosts = array('localhost:8888', 'localhost');
+
+//	Change Admin theme
+$config->defaultAdminTheme = 'AdminThemeReno';
 

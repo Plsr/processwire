@@ -1,25 +1,26 @@
 <?php 
+//	Import HTML Head
+include('./includes/head.inc');
 
-// home.php (homepage) template file. 
-// See README.txt for more information
+//Import header
+include('./includes/header.inc');
+?>
 
-// Primary content is the page body copy and navigation to children. 
-// See the _func.php file for the renderNav() function example
-$content = $page->body . renderNav($page->children, 0, 'summary');
+<!-- Body start -->
 
-// if there are images, lets choose one to output in the sidebar
-if(count($page->images)) {
-	// if the page has images on it, grab one of them randomly... 
-	$image = $page->images->getRandom();
-	// resize it to 400 pixels wide
-	$image = $image->width(400); 
-	// output the image at the top of the sidebar...
-	$sidebar = "<img src='$image->url' alt='$image->description' />";
-	// ...and append sidebar text under the image
-	$sidebar .= $page->sidebar;	
-} else {
-	// no images... 
-	// append sidebar text if the page has it
-	$sidebar = $page->sidebar; 
-}
+<?php
+	//	Main Loop of the page.
+	//	Gets all posts from the post-wrapper page and displays their contents
+	foreach($pages->get('/post-wrapper/')->children as $item) {
+		//	Only display posts with the 'post' template active
+		if($item->template->id == $templates->get('post')->id){
+			echo $item->title;
+			echo $item->post_content;
+		}
+	}
+?>
 
+
+<?php 
+//	Import footer
+include('.includes/foot.inc'); ?>

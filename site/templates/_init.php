@@ -17,15 +17,19 @@
 
 // Variables for regions we will populate in _main.php. Here we also assign 
 // default values for each of them.
+$site_title = $pages->get('/site-settings/')->site_title;
+$site_title_image = $pages->get('/site-settings/')->site_title_image->url; 
+$site_logo = $pages->get('/site-settings/')->site_logo->url; 
 $title = $page->get('headline|title'); // headline if available, otherwise title
 $content = $page->body;
 $sidebar = $page->sidebar;
 
 
+
+
 // We refer to our homepage a few times in our site, so we preload a copy 
 // here in a $homepage variable for convenience. 
 $homepage = $pages->get('/'); 
-
 
 // Include shared functions (if any)
 include_once("./_func.php"); 
