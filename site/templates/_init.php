@@ -24,7 +24,7 @@ $title = $page->get('headline|title'); // headline if available, otherwise title
 $content = $page->body;
 $sidebar = $page->sidebar;
 
-
+$latest_article = $pages->find('template=article')->last();
 
 
 // We refer to our homepage a few times in our site, so we preload a copy 

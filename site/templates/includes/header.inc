@@ -20,8 +20,8 @@
 </nav>
 <div class="branding">
 	<ul>
-		<li><img src="<?php echo $site_logo; ?>"></li>
-		<li><?php echo $site_title; ?></li>
+		<li><a href="<?php echo $homepage->url; ?>"><img src="<?php echo $site_logo; ?>"></a></li>
+		<li><h1><a href="<?php echo $homepage->url; ?>"><?php echo $site_title; ?></a></h1></li>
 	</ul>
 </div>
 </header>

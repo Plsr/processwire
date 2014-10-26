@@ -2,3 +2,13 @@
 2014-10-25 22:01:23	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 1 pages
 2014-10-25 23:56:43	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 1 pages
 2014-10-25 23:56:43	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 1 pages
+2014-10-26 14:48:25	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 7 pages
+2014-10-26 14:48:25	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 7 pages
+2014-10-26 14:49:09	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 14:49:09	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 15:46:05	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 15:46:05	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 15:46:19	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 15:46:19	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 2 pages
+2014-10-26 15:56:13	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 4 pages
+2014-10-26 15:56:13	chris	http://localhost:8888/processwire/processwire/page/sort/	Updated sort for 4 pages
