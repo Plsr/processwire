@@ -7,18 +7,16 @@ include('./includes/header.inc');
 ?>
 
 <!-- Body start -->
-
-<?php
-	//	Main Loop of the page.
-	//	Gets all posts from the post-wrapper page and displays their contents
-	foreach($pages->get('/post-wrapper/')->children as $item) :
-		//	Only display posts with the 'post' template active
-		if($item->template->id == $templates->get('post')->id) : ?>
-			<h1><?php echo $item->title; ?></h1>
+<?php $posts = $pages->find('template=post, limit=2'); ?>
+<?php $pagination = $posts->renderPager(); ?>
+<?php	foreach($posts as $item) : ?>
+			<h1><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></h1>
+			<?php echo $item->post_date; ?>
 			<p><?php echo $item->post_content; ?></p>
-		
-		<?php endif;?>
 <?php endforeach;?>
+<?php echo $pagination; ?>
+
+
 
 
 <?php 
