@@ -8,8 +8,16 @@ include('./includes/header.inc');
 
 <!-- Body start -->
 
-<h2><a href="<?php echo $latest_article->url; ?>"><?php echo $latest_article->title; ?></a></h2>
-<p><?php echo $latest_article->article_subline; ?></p>
+<section class="latest-article">
+	<div class="latest-article-content">
+		<h3>Latest Article</h3>
+		<h2><a href="<?php echo $latest_article->url; ?>"><?php echo $latest_article->title; ?></a></h2>
+		<p><?php echo $latest_article->article_subline; ?></p>
+		<section class="read-more-link">
+			<a href="<?php echo $latest_article->url; ?>">Read more</a>
+		</section>
+	</div>
+</section>
 
 <?php $posts = $pages->find('template=post, limit=2, sort=sort'); ?>
 <?php $pagination = $posts->renderPager(); ?>

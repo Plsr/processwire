@@ -1,0 +1,56 @@
+.latest-article {
+	background-color: $light-grey;
+}
+
+.latest-article-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: block;
+	
+	h3 {
+		font-size: 16px;
+		color: #999999;
+		font-weight: 400;
+		padding-bottom: 20px;
+	}
+	h2 {
+	 	font-size: 36px;
+	 	line-height: 36px;
+	 	text-transform: uppercase;
+	 	font-weight: 700;
+	 	padding-bottom: 10px;
+	 	
+	 	a {
+	 		color: $font-color;
+	 	}
+	 }
+
+	 p {
+	 	font-family: $content-font;
+	 	color: $font-color;
+	 	font-size: 16px;
+	 	line-height: 26px;
+	 }
+}
+
+.read-more-link {
+	box-sizing: border-box;
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-bottom: 80px;
+
+	a {
+		font-family: $headline-font;
+		text-decoration: none;
+		color: $accent-color;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 300;
+		padding: 14px 28px;
+		border: 1px solid $accent-color;
+		border-radius: 8px;
+	}
+}
